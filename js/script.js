@@ -74,13 +74,13 @@ const nome2 = "Marco";
 let saluto2 = "Ciao ";
 let domanda = "come stai?";
 let result = `${saluto2}${nome2}, ${domanda}`;
-console.log(result)
+console.log(result);
 
 //ESEMPIO DI CALCOLI CON BACKTICK:
 let c = 3;
 let d = 5;
 let result2 = `Il risultato della somma è ${c + d}`;
-console.log(result2)
+console.log(result2);
 
 //2. NUMERO (NUMBER)
 //Serve per rappresentare numeri sia interi che decimali(assolutamente non usare APICI di qualsiasi tipo)
@@ -114,7 +114,8 @@ let risposta = null;
 console.log(risposta);
 
 //DATI COMPLESSI
-//E' un tipo di DATO che può contenere più valori e proprietà e si può dividere i OBJECT, ARRAY e FUNZIONE (FUNCTION)
+//E' un tipo di DATO che può contenere più valori e proprietà e si può dividere i OBJECT, ARRAY e FUNZIONE (FUNCTION).
+
 //OBJECT si tratta di un insieme di valori e proprietà che possono essere prelevati songolarmente tramite parola chiave appropriata
 //ESEMPIO CON OBJECT:
 const persona = {
@@ -122,15 +123,46 @@ const persona = {
     cognome: "Del Monaco",
     età: 34,
 };
-console.log(persona);//mi stamperà tutto l elenco scritto sopra con i vari valori e propietà specifiche tutto dentro {}
+console.log(persona);//mi stamperà tutto l elenco scritto sopra con i vari valori e propietà specifiche tutto dentro{}
+//Per prelevare un singolo elemnmeto all interno dell OBJECT userò la ParolaChiave.ValoreSpecifico:
 console.log(persona.nome);//stamperà SOLO Gabriele
 console.log(persona.cognome);//stamperà SOLO Del Monaco
 console.log(persona.età);//stamperà SOLO 34
 //In definitiva l OBJECT può essere considerato come un dizionario con al suo interno tante parole che possono essere prelevate tramite l utilizzo di parole chiave.
 
-//L'ARRAY è molto simile all'OBJECT per contenuti e valori al suo interno ma è definito con [] e per prelevare gli elementi al suo interno si utilizza la parolachiave.[] dove all'interno delle quadre metteremo SOLO valori numerici i quali indicizzeranno gli elementi all' interno dell ARRAY, ZERO COMPRESO!
+//L'ARRAY è molto simile all'OBJECT per contenuti e valori al suo interno ma è definito con [] e per prelevare gli elementi al suo interno si utilizza la parolachiave[] dove all'interno delle quadre metteremo SOLO valori numerici i quali indicizzeranno gli elementi all' interno dell ARRAY, ZERO COMPRESO!
 //ESEMPIO DI ARRAY:
+let colori = ["blue", "rosso","verde"];
+console.log(colori);//stamperà tutta l'ARRAY compresa di []
+//Per prelevare un singolo elemento all interno dell ARRAY utilizzaremo la ParolaChiave[NumeroIdicizzato]:
+console.log(colori[0]);//stamperà blue
+console.log(colori[1]);//stamperà rosso
+console.log(colori[2]);//stamperà verde
+//In definitiva l ARRAY può essere considerata come una lista di numeri indicizzari e asseganti automaticamente dal sistema che possono essere prelevati tramite l utilizzo della parola chiave e specificando all interno delle [] la posizione idicizzata dell elemento che vogliamo stampare.
 
+//FUNZIONE (FUNCTION ())
+//Le funzioni in JS sono definite OGGETTI COMPLESSI SPECIALI ed è invocabile in qualunque parte del codice purchè prima sia stata dichiarata.
+//ESEMPIO DI FUNCTION ():
+function saluta() {
+    console.log("Ciao");
+};//qui ho dichiarato la FUNCTION()
+
+saluta()//qui ho evocato la FUNCTION() e in console mi stamperà Ciao
+saluta()
+saluta()
+saluta()
+//posso evacarla tutte le volte che voglio senza problemi di conflitti di valori
+
+//CONCATENAZIONE
+//Con le STRINGHE possiamo compiere anche operazioni di CONCATENAZIONE ovvero sommare più stringhe tra loro per creare frasi di senso compiuto mediante l utilizzo del simbolo di sommatoria +
+//ESEMPIO DI CONCATENZIONE:
+const username3 = "Gabriele "
+let userCar = " è una Ford EcoSport ";
+let userCarColor = "di colore Titanium";
+let frase2 = "La macchina di ";
+let result3 = frase2 + userName2 +userCar + userCarColor;
+/* let result3 = `${frase2}${userName2}${userCar}${userCarColor}`; *///posso anche farlo con il BACKTICK ed avrà lo stesso risultato
+console.log(result3)//stamperà in console la macchina di Gabriele è una Ford Ecosport di colore Titanium
 
 //Operatori
 //Strutture Condizionale
