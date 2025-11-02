@@ -162,9 +162,85 @@ let userCarColor = "di colore Titanium";
 let frase2 = "La macchina di ";
 let result3 = frase2 + userName2 +userCar + userCarColor;
 /* let result3 = `${frase2}${userName2}${userCar}${userCarColor}`; *///posso anche farlo con il BACKTICK ed avrà lo stesso risultato
-console.log(result3)//stamperà in console la macchina di Gabriele è una Ford Ecosport di colore Titanium
+console.log(result3)//stamperà in console la macchina di Gabriele è una Ford Ecosport di colore Titanium.
 
-//Operatori
+//TRASFORMARE UNA STRINGA IN UN NUMERO E VICEVERSA (PARSEINT per i NUMERI INTERI/PARSEFLOAT per i NUMERI DECIMALI)
+//Esempio da STRINGA a NUMERO INTERO con PARSEINT():
+const number = "34";
+console.log(number);//stamperà 34 STRINGA
+
+const stringNumber = parseInt(number);
+console.log(stringNumber);//Stamperà 34 NUMERO INTERO
+
+//Esempio da STRINGA a NUMERO DECIMALE con PARSEFLOAT():
+const decimNumber = "3.14";
+console.log(decimNumber);//stamperà 3.14 STRINGA
+
+const stringDecimNumber = parseFloat(decimNumber);
+console.log(stringDecimNumber);//stamperà 3.14 NUMERO DECIMALE
+
+//Esempio da NUMERO INTERO A STRINGA con STRING():
+const num = 34;
+console.log(num);//stamperà 34 NUMERO
+const stringNum = String(num);
+console.log(stringNum);//stamperà 34 STRINGA
+
+//Esempio da NUMERO DECIMALE a STRINGA con STRING():
+const decimNum = 3.14;
+console.log(decimNum);//stamperà 3.14 NUMERO DECIMALE
+const stringDecimNum = String(decimNum);
+console.log(stringDecimNum);//stamperà 3.14 STRINGA
+
+//Esempio da NUMERO INTERO a STRINGA con .TOSTRING():
+const num2 = 34;
+console.log(num2);//stamperà 34 NUMERO INTERO
+const stringNum2 = num2.toString();
+console.log(stringNum2);//stamperà 34 STRINGA
+
+//Esempio da NUMERO DECIMALE a STRINGA con .TOSTRING():
+const decimNumber2 = 3.14;
+console.log(decimNumber2);//stamperà 3.14 NUMERO DECIMALE
+const stringDecimNum2 = decimNumber2.toString();
+console.log(stringDecimNum2);//stamperà 3.14 STRINGA
+
+//QUANTO E' LUNGA UNA STRINGA?
+//posso anche sapere da quanti caratteri (spazi e simboli compresi) è composta una STRINGA specifica con .length
+//ESEMPIO:
+let text = "Ciao mondo!";
+console.log(text);//stamperà Ciao mondo!
+let lengthText = text.length;
+console.log(lengthText);//stamperà 11 caratteri compresi di spazi e simboli
+
+//CHE LETTERA C'E' IN UNA DETERMINATA POSIZIONE IN UNA FRASE?
+//in JS posso accederea una lettera in una certa posizione della stringa usando le parentesi [] o il metodo .chart()
+//La STRINGA in JS si comporta quasi come se fosse un ARRAY indicizzato (compreso lo zero iniziale)!
+//ESEMPIO CON []:
+let testo = "Ciao mondo!";
+let lettera = testo[2];
+console.log(lettera);//stamperà a che nella STRINGA è indicizzata con il numero 2
+
+//ESEMPIO CON .CHART():
+let testo2 = "Ciao mondo!";
+let letter = testo2.charAt(2);
+console.log(letter);//stamperà a esattamente come sopra con le []
+//NOTA FINALE: [] E .CHART() HANNO LA STESSA FUNZIONE, SOLO CHE .CHART() E' UN METODO PIù SICURO ANCHE SUI BROWSER PIù DATATI)
+
+//VOGLIO ESTRARRE UNA PORZIONE DI TESTO DA UN STRINGA
+//Posso anche estrarre una porzione di testo da una stringa (cioè una sottostringa) usando .slice() esattamente come in un ARRAY, scrivendo nelle () da che indice a che indice estrarre.
+//ESEMPIO CON .SLICE():
+let text2 = "Ciao mondo!";
+let porzioneText = text2.slice(0,4);
+console.log(porzioneText); 
+
+//POSSO ANCHE USARE INDICI NEGATIVI PER CONTARE DALLA FINE DELLA STRINGA SEMPRE USANDO .SLICE()
+//ESEMPIO:
+let fineTesto = text2.slice(-6)
+console.log(fineTesto);//stamperà mondo! perchè siamo partiti a contare dalla fine della stringa andando al contrario
+//NOTA FINALE: .SLICE() CON INDICI NEGATIVI SI COMPORTA ESATTAMENTE COME QUELLO POSITIVO DOVE IL PRIMO INDICE (0) è SEMPRE COMPRESO MENTRE L ULTIMO NO.
+
+
+
+//Operatori (AND, OR, NOT)
 //Strutture Condizionale
 //Ciclo For
 //Array
