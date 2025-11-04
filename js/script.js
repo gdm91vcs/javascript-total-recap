@@ -27,6 +27,11 @@ console.log(a+b);//15 somma
 console.log(a-b);//5 sottrazione
 console.log(a*b);//50 moltiplicazione
 console.log(a/b);//2 divisione
+//NOTA AGGIUNTIVA SULLE OPERAZIONI: ESISTE ANCHE IL MODULO (%) IL QUALE SERVE A FARCI SAPERE IL VALORE DEL RESTO DELLA DIVISIONE
+//ESEMPIO DI MODULO (%):
+console.log(a % b);//stamperà 0 perchè il resto della divisone tra 10 e 5 è nullo!
+let e = 3;
+console.log(a % e)//stamperà 1 perchè il resto della divisione tra 10 e 3 è esattamente 1!
 
 //CONST ("COSTANTE")
 //E' quella variabile che non cambia mai nel corso della sua esecuzione ed è sempre fissa(data di nascita, nome e cognome). Vive solo all interno del blocco dov è stata dichiarata e per vederla in console bisogna fare console.log() per stamparla.
@@ -114,7 +119,7 @@ let risposta = null;
 console.log(risposta);
 
 //DATI COMPLESSI
-//E' un tipo di DATO che può contenere più valori e proprietà e si può dividere i OBJECT, ARRAY e FUNZIONE (FUNCTION).
+//E' un tipo di DATO che può contenere più valori e proprietà e si può dividere in OBJECT, ARRAY e FUNZIONE (FUNCTION()).
 
 //OBJECT si tratta di un insieme di valori e proprietà che possono essere prelevati songolarmente tramite parola chiave appropriata
 //ESEMPIO CON OBJECT:
@@ -164,7 +169,7 @@ let result3 = frase2 + userName2 +userCar + userCarColor;
 /* let result3 = `${frase2}${userName2}${userCar}${userCarColor}`; *///posso anche farlo con il BACKTICK ed avrà lo stesso risultato
 console.log(result3)//stamperà in console la macchina di Gabriele è una Ford Ecosport di colore Titanium.
 
-//TRASFORMARE UNA STRINGA IN UN NUMERO E VICEVERSA (PARSEINT per i NUMERI INTERI/PARSEFLOAT per i NUMERI DECIMALI)
+//TRASFORMARE UNA STRINGA IN UN NUMERO E VICEVERSA (PARSEINT per i NUMERI INTERI - PARSEFLOAT per i NUMERI DECIMALI)
 //Esempio da STRINGA a NUMERO INTERO con PARSEINT():
 const number = "34";
 console.log(number);//stamperà 34 STRINGA
@@ -234,18 +239,90 @@ console.log(porzioneText);
 
 //POSSO ANCHE USARE INDICI NEGATIVI PER CONTARE DALLA FINE DELLA STRINGA SEMPRE USANDO .SLICE()
 //ESEMPIO:
-let fineTesto = text2.slice(-6)
+let text3 = "Ciao mondo!";
+let fineTesto = text3.slice(-6)
 console.log(fineTesto);//stamperà mondo! perchè siamo partiti a contare dalla fine della stringa andando al contrario
 //NOTA FINALE: .SLICE() CON INDICI NEGATIVI SI COMPORTA ESATTAMENTE COME QUELLO POSITIVO DOVE IL PRIMO INDICE (0) è SEMPRE COMPRESO MENTRE L ULTIMO NO.
 
+//VOGLIO CONTROLLARE SE UN CERTO VALORE è PRESENTE DENTRO UN ARRAY O IN UNA STRINGA
+//Il metodo per il controllo avviene mediate l utilizzo di .includes() il quale ci restituirà un valore Booleano (TRUE/FALSE)
+//TRUE se il valore cercato è stato trovato
+//FALSE se il valore cercato non è stato trovato
+//ESEMPIO .INCLUDES() CON UN ARRAY:
+const frutti = ["mela","banana","pera"];
+console.log(frutti);//stamperà tutta l ARRAY in console
+console.log(frutti.includes("banana"));//stamperà TRUE perchè il valore che ho cercato è presente nell mio ARRAY
+console.log(frutti.includes("arancia"));//stamperà FALSE perchè il valore che ho cercato non è presente nel mio ARRAY
 
+//ESEMPIO .INCLUDES() SU UNA STRINGA:
+const frase3 = "Ciao mondo!";
+console.log(frase3.includes("Ciao"));//stamperà TRUE perchè il valore che ho cercato è presente nella STRINGA
+console.log(frase3.includes("Salve"));//stamperà FALSE perchè il valore che ho cercato non è presente nella STRINGA
+
+//VOGLIO SOSTITUIRE UNA PARTE DI UN ASTRINGA CON UN ALTRA
+//Il metodo di sostituzione nelle STRINGHE è CON .REPLACE() IL QUALE RESTITUISCE UNA NUOVA STRINGA SENZA MODIFICARE QUELLA ORIGINALE
+//ESEMPIO .REPLACE() SOSTITUZIONE PAROLA:
+const testo3 = "Ciao mondo!";
+const nuovoTest3 = testo3.replace("mondo!", "Gab!");
+console.log(nuovoTest3);//stamperà Ciao Gab! mantenendo la stringa originale qui nel codice
+//NOTA FINALE: .REPLACE() ANDRà A SOSTITUIRE SOLO LA PRIMA PAROLA DELLA FRASE/STRINGA
+
+//VOGLIO SOSTITUIRE PIù PARTI DI UNA STRINGA
+//Il metodo di sostituzione di più parti di una STRINGA avviene tramite l utilizzo di .REPLACEALL()
+//ESEMPIO .REPLACEALL():
+const frase4 = "ciao ciao mondo ciao!";
+const nuovaFrase4 = frase4.replaceAll("ciao","hello");//qui ho specificato che bisogna sostituire tutti i ciao con hello
+console.log(nuovaFrase4);//stamperà hello hello mondo hello andando a sostituire hello con tutti i ciao presenti nella stringa
+
+//VOGLIO TRASFORMARE LE PAROLE DI UNA STRINGA IN MAIUSCOLO
+//Per applicare questo metodo useremo .toUpperCase() il quale trasformerà le parole da noi selezionate in maiuscolo
+//ESEMPIO .TOUPPERCASE():
+let parola = "casa";
+let maiuscolaParola = parola.toLocaleUpperCase();
+console.log(maiuscolaParola);//stamperà CASA tutto maiuscolo
+
+//VOGLIO TRASFORMARE UNA PAROLA DI UNA STRINGA IN MINUSCOLO
+//Useremo .TOLOWERCASE() per trasformare la parola tutti in minuscolo
+//ESEMPIO .TOLOWERCASE():
+let parola2 = "AUTOMOBILE";
+let minuscolaParola2 = parola2.toLocaleLowerCase();
+console.log(minuscolaParola2);//stamperà automobile tutto in minuscolo
+
+//VOGLIO SAPERE DOVE SI TROVA UNA CERTA LETTERA O PAROLA IN UNA STRINGA
+//Per applicare questa ricerca useremo .indexOf() per trovare sia la posizione di un parola e sia quella di una lettera
+//ESEMPIO .INDEXOF() PER TROVARE LA POSIZIONE DI UNA PAROLA:
+let frase5 = "Mi piace la pizza!";
+let posizioneParola = frase5.indexOf("pizza!");//qui gli sto dicendo di verificare in quale posizione inizi la parola pizza
+console.log(posizioneParola);//stamperà 12 perchè nell idice 12 la parola pizza ha la p iniziale
+
+//ESEMPIO .INDEXOF() PER TROVARE UNA LETTERA IN UNA PAROLA:
+let frase6 = "banana";
+let posizioneLettera = frase6.indexOf("n");//qui gli sto dicendo di stampare la posizone indice della prima lettera n disponibile in quella parola
+console.log(posizioneLettera);//stamperà 2 perchè la prima n disponibile nella parola banana si trova nella posizione indice pari a 2
+//NOTA FINALE: se la nostra ricerca tramite .indexOff() darà come risultato -1 vuol dire che la ricerca di quella parola/lettera ha dato esito negativo
+
+//VOGLIO DIVIDERE UNA STRINGA IN PIù PARTI, RACCOGLIERE IL RISULTATO IN UN ARRAY E USARE UN SEPARATORE DA ME SCELTO
+//Per applicare questo metodo utilizzerò .split() il quale mi creerà un array dividendole parole racchiuse in doppo apici
+//ESEMPIO .SPLIT() DI UNA FRASE CLASSICA:
+let frase7 = "Ciao come stai?";
+let divisioneFrase = frase7.split(" ");//qui ho detto di creare un ARRAY e dividere ogni parola con i doppi apici 
+console.log(divisioneFrase);//stamperà ["Ciao","come","stai?"]
+
+//ESEMPIO .SPILT() PER LE LETTERE CHE VOGLIO TOGLIERE:
+let parola3 = "banana";
+let pezziParola = parola3.split("n");//qui ho detto creami un ARRAY di quella parola eliminandi tutte le n
+console.log(pezziParola);//stamperà ["ba", "a", "a"]
+
+//ESEMPIO .SPLIT() DIVIDERE OGNI SINGOLA LETTERA:
+let testo4 = "Ciao";
+let singoleLettere = testo.split("")//qui ho detto di creare un ARRAY con dentro ogni singola lettera divisa della parola ciao racchiuse nei doppi apici
+console.log(singoleLettere);//stamperà ['C', 'i', 'a', 'o', ' ', 'm', 'o', 'n', 'd', 'o', '!']
 
 //Operatori (AND, OR, NOT)
-//Strutture Condizionale
+//Strutture Condizionali (IF)
 //Ciclo For
 //Array
 //Oggetti
 //Funzioni
 //DOM
-//Logica e mini-progetti:
-//Calcolatrice, lista della spesa, contatore click, generatore di numeri casuali, gioco(indovina il numero)
+//Logica e mini-progetti: calcolatrice, lista della spesa, contatore click, generatore di numeri casuali, gioco (indovina il numero)
