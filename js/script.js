@@ -318,8 +318,145 @@ let testo4 = "Ciao";
 let singoleLettere = testo.split("")//qui ho detto di creare un ARRAY con dentro ogni singola lettera divisa della parola ciao racchiuse nei doppi apici
 console.log(singoleLettere);//stamperà ['C', 'i', 'a', 'o', ' ', 'm', 'o', 'n', 'd', 'o', '!']
 
-//Operatori (AND, OR, NOT)
-//Strutture Condizionali (IF)
+//VALORI SPECIALI (ISNAN - NAN - NUMBER.ISNAN())
+//Sono anche chiamti FUNZIONI SPECIALI e servono per gestire casi particolari con i numeri
+
+//NAN (NOT A NUMBER)
+//è un valore speciale che significa "QUESTO NON è UN NUMERO VALIDO" e compare quando un operazione matematica o una conversione non riesce a produrre un numero
+//ESEMPI CON NAN:
+console.log(0/0);//stamperà NAN perchè 0 diviso 0 in matematica non è un numero valido e non ha senso
+console.log(parseInt("ciao"));//stamperà NAN perchè ciao non si può trasformare in un numero
+
+//ISNAN (IS NOT A NUMBER)
+//è una funzione speciale che CONTROLLA se un valore è NAN oppure non può essere convertito in un numero. Serve per capire se un valore rappresenta qualcosa di non numerico
+//detto più semplicemente, risponde alla domanda: "PUò ESSERE CONVERTITO IN UN NUMERO?"
+//NO! PERCHè ALLORA è GIà UN NUMERO
+//SI! PUò ESSERE CONVERTITO IN UN NUMERO
+//ESEMPI CON ISNAN:
+console.log(isNaN(123));//stamperà FALSE perchè 123 è già un numero
+console.log(isNaN("123"));//stamperà FALSE perchè può essere convertito in un numero
+console.log(isNaN("ciao"));//stamperà TRUE perchè è vero che non può essere convertito in un numero
+console.log(isNaN(NaN));//stamperà TRUE perchè è vero che non è un numero
+
+//SE VOLESSI VERIFICARE SE QUEL NUMERO è UN NUMERO OPPURE NO?
+//In questo caso userei NUMBER.ISNAN() il quale no fa per conversioni ma controlla solo se il valore in questione è numerico oppure no (NAN)
+//ESEMPIO NUMBER.ISNAN():
+let x1 = NaN;
+console.log(Number.isNaN(x1));//stamperà TRUE perchè x1 è proprio un NAN
+let y = "123";
+console.log(Number.isNaN(y));//stamperà FALSE perchè è una STRINGA e non un numero
+let z = "ciao";
+console.log(Number.isNaN(z));//stamperà FALSE perchè è una STRINGA
+let w = 123;
+console.log(Number.isNaN(w));//stamperà FALSE perchè è un numero valido
+
+//GLI OPERATORI AND, OR, NOT
+//Sono degli OPERSTORI LOGICI che ci permettono di controllare il valore di verità di una o più espressioni. Questo operatori spesso li utilizziamo per decidere cosa fare in base a determinate condizioni richieste (IF o FOR)
+//NELLA PRATICA SIMBOLICA:
+//AND (&&): E
+//OR (||): O
+//NOT (!): NON
+
+//AND (&&) restituisce il primo valore FALSO o, se tutti sono VERI, solo l'ultimo
+//ESEMPIO CON AND (&&) IN UN IF:
+let età1 = 21;
+let patente = true;
+//ENTRIAMO NEL CONTROLLO TRAMITE IF
+if(età1 >= 18 && patente) {
+    console.log("Sei maggiorenne, puoi guidare!");
+} else {
+    console.log("Sei minorenne, non puoi guidare!")
+}
+//AND (&&) dice TUTTE E DUE LE CONDIZIONI DEVONO ESSERE VERE
+//1. SE UN VALORE è FALSO: FALSE
+//2. SE TUTTI I VALORI SONO VERI: TRUE
+
+//OR (||) è MOLTO UTILE QUANDI BASTA UNA SOLA CONDIZIONE DI VERIFICA VERA O FALSA
+//ESEMPIO OR (||) IN UN IF:
+let haiLeChiavi = true;
+let haiIlTelecomando = false;
+if(haiLeChiavi || haiIlTelecomando) {
+    console.log("Puoi entrare in casa!")
+}
+//OR (||) DICE BASTA CHE UNA DELLE DUE CONDIZIONI SIA VERA E FUNZIONA AL CONTRARIO DI AND (&&)
+
+//NOT(!) SERVE PER INVERTIRE IL VALORE DI UNA CONDIZIONE:
+ //ESEMPIO NOT(!) IN UN IF:
+let portaChiusa = true;
+if(!portaChiusa) {
+    console.log("La porta è aperta!");
+} else {
+    console.log("La porta è chiusa!");
+}
+//NOT(!) DICE BASTA CHE UNA CONDIZIONE SIA VERA O FALSA ED IO TE LA CONVERTO NELL OPPOSTO!
+
+//OPERATORI RELAZIONALI
+//Questi operatori servono a confrontare due valori e restituiscono sempre TRUE o FALSE
+//MAGGIORE DI > controlla se il valore di sinistra è maggiore di quello di destra
+//ESEMPIO CON >:
+let a1 = 5;
+let b1 = 3;
+console.log(a1>b1);//stamperà TRUE
+console.log(b1>a1);//stamperà FALSE
+
+//MINORE DI < controlla se il valore di sinistra è minore di quello di destra
+//ESEMPIO CON <:
+let a2 = 10;
+let b2 = 8;
+console.log(b2<a2);//stamperà TRUE
+console.log(a2<b2);//stamperà FALSE
+
+//MAGGIORE O UGUALE DI >= controlla se il valore di sinistra è maggiore o uguale a quello di destra
+//ESEMPIO CON >=:
+let a3 = 6;
+let b3 = 7;
+console.log(b3>=a3);//stamperà TRUE
+console.log(a3>=b3);//stamperà FALSE
+
+//MINORE UGUALE DI <= controlla se il valore di sinistra è minore o uguale di quello di destra
+//ESEMPIO CON <=:
+let a4 = 5;
+let b4 = 9;
+console.log(a4<=b4);//stamperà TRUE
+console.log(b4<=a4);//stamperà FALSE
+
+//UGUALE == controlla se i valori sono uguali dopo la conversione dei tipi
+//ESEMPIO CON ==:
+let a5 = 5;//numero
+let cinque = "5";//stringa
+console.log(a5==cinque);//stamperà TRUE perchè la STRINGA verrà convertita in numero perchè hanno lo stesso valore! Se ci fosse stato 6 (in a5 o in "cinque") in console sarebbe stato stampato FALSE perchè i due valori di base, numero e stringa, sono diversi e non convertibili
+
+//UGUALE STRETTAMENTE === controlla se i valori sono puramente uguali tenendo conto dei loro valori (stringa/numero)
+//ESEMPIO CON ===:
+let a6 = 5;
+let cinque1 = "5";
+console.log(a6===cinque1);//stamperà FALSE perchè il numero 5 non sarà mai uguale alla stringa "5"!
+
+//DIVERSO != controlla sei i valori non sono uguali con la conversione dei tipi
+//ESEMPIO CON DIVERSO !=:
+let a7 = 8;
+let b7 = "6";
+let c1 = "8";
+console.log(a7!=b7);//stamperà TRUE
+console.log(a7!=c1);//stamperà FALSE
+
+//DIVERSO STRETTAMENTE !== controlla se i valori o il tipo siano diversi
+//ESEMPIO CON !==:
+let a8 = 5;
+let b8 = "5";
+console.log(a8!==b8);//stamperà TRUE
+console.log(a8!==a8);//stamperà FALSE
+
+//STRUTTURE CONDIZIONALI (IF)
+
+
+
+
+
+
+
+
+
 //Ciclo For
 //Array
 //Oggetti
