@@ -433,7 +433,7 @@ let cinque1 = "5";
 console.log(a6===cinque1);//stamperà FALSE perchè il numero 5 non sarà mai uguale alla stringa "5"!
 
 //DIVERSO != controlla sei i valori non sono uguali con la conversione dei tipi
-//ESEMPIO CON DIVERSO !=:
+//ESEMPIO CON !=:
 let a7 = 8;
 let b7 = "6";
 let c1 = "8";
@@ -446,15 +446,65 @@ let a8 = 5;
 let b8 = "5";
 console.log(a8!==b8);//stamperà TRUE
 console.log(a8!==a8);//stamperà FALSE
+console.log(b8!==b8);//stamperà FALSE
+//NOTE FINALI: USA SEMPRE === E !== PER NON AVERE PROBLEMI CON LE VARIE CONVERSIONIDEI TIPI!
 
-//STRUTTURE CONDIZIONALI (IF)
+//STRUTTURE CONDIZIONALI (IF) (ELSE IF) (ELSE)
+//Queste istruzioni servono per eseguire e verifcare le condizioni di un codice e stabilire se sono vere o false
+//ESEMPIO PRATICO: "SE SUCCEDE X, ALLORA FAI Y ALTRIMENTI FAI Z"
+//STRUTTURA BASE:
+//let (CONDIZIONE) {
+//CODICE DA ESEGUIRE PER VERIFCARE LA CONDIZIONE;
+//}
+//ESEMPIO CON IF:
+let età2 = 18;
+if(età2 >= 18) {
+    console.log("Puoi entrare!");
+}
+//SPIEGAZIONE:LA CONDIZIONE PRINCIPALE DI VERIFICA è AVERE 18 ANNI. SE L ETà è MAGGIORE UGUALE DI 18 ALLORA STAMPERà "PUOI ENTRARE!", SE NO NON SUCCEDE NULLA! 
 
+//AGGIUNGIAMO ELSE
+//SE VOGLIO DIRE "ALTRIMENTI FAI QUALCOS ALTRO" USERò ELSE PER AVERE UNA CONDIZIONE E UNA RISPOSTA DIVERSA
+//ESEMPIO CON ELSE:
+let età3 = 16;
+if(età3 >= 18) {
+    console.log("Puoi entrare!");
+} else {
+    console.log("Non puoi entrare!");
+}
+//SPIEGAZIONE: LA CONDIZIONE PRINCIPALE DI VERIFICA è QUELLA DI AVERE 16 ANNI. SE L ETà è MAGGIORE UGUALE DI 18 STAMPERà "PUOI ENTRARE!" ALTRIMENTI (COME IN QUESTO CASO) STAMPERà "NON PUOI ENTRARE!"
 
+//AGGIUNGIAMO ELSE IF
+//SERVE PER CONTROLLARE PIù CONDIZIONI E DOVRò AGGIUNGERE LA SUA CONDIZIONE DI VERIFICA APPROPRIATA. NE POSSO USARE QUANTI NE VOGLIO.
+//ESEMPIO CON ELSE IF:
+let voto = 7;
+if (voto >= 9) {
+    console.log("Ottimo");
+} else if (voto >= 7) {
+    console.log("Buono");
+} else if (voto === 6) {
+    console.log("Sufficiente")
+} else {
+    console.log("Insufficiente")
+}
+//SPIEGAZIONE: LA CONDIZIONE PRINCIPALE DI VERIFCA è IL VOTO 7. SE IL VOTO è MAGGIORE UGUALE DI 9 STAMPERà "OTTIMO". SE IL VOTO è MAGGIORE UGUALE DI 7 STAMPERà "BUONO". SE IL VOTO è UGUALE A 6 STAMPERà "SUFFICIENTE". ALTRIMENTI STAMPERà "INSUFFICIENTE"
 
-
-
-
-
+//ESERCIZI:
+//CHIEDI ALL UTENTE UN NUMERO (USANDO PROMPT) E STAMPA:
+//POSITIVO: SE IL NUMERO è > DI 0
+//NEGATIVO: SE IL NUMERO è < DI 0
+//ZERO: SE IL NUMERO è === A 0
+/* const userNumber = Number(prompt("Scrivi un numero!"));
+console.log(userNumber);
+if (userNumber > 0) {
+    console.log("Positivo");
+} else if (userNumber < 0) {
+    console.log("Negativo")
+} else if (userNumber === 0) {
+    console.log("Zero")
+} else {
+} */
+//SPIEGAZIONE: LA CONDIZIONE PRINCIPALE è VERIFICARE IL NUMERO CHE SCRIVERà L UTENTE. USERò PROMPT PER CREARE IL POP UP DI RICHIESTA. USERò NUMBER PRIMA DEL PROMPT PER CONVERTIRE IMMEDIATAMENTE IL VALORE SCRITTO DALL UTENTE IN NUMERO (ALTRIMENTI SAREBBE STATO STRINGA). SE IL NUMERO è MAGGIORE DI 0 ALLORA STAMPERè "POSITIVO". SE IL NUMERO è MINORE DI 0 STAMPERà "NEGATIVO". SE IL NUMERO è 0 STAMPERà 0.
 
 
 //Ciclo For
