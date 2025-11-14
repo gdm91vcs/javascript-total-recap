@@ -506,6 +506,81 @@ if (userNumber > 0) {
 } */
 //SPIEGAZIONE: LA CONDIZIONE PRINCIPALE è VERIFICARE IL NUMERO CHE SCRIVERà L UTENTE. USERò PROMPT PER CREARE IL POP UP DI RICHIESTA. USERò NUMBER PRIMA DEL PROMPT PER CONVERTIRE IMMEDIATAMENTE IL VALORE SCRITTO DALL UTENTE IN NUMERO (ALTRIMENTI SAREBBE STATO STRINGA). SE IL NUMERO è MAGGIORE DI 0 ALLORA STAMPERè "POSITIVO". SE IL NUMERO è MINORE DI 0 STAMPERà "NEGATIVO". SE IL NUMERO è 0 STAMPERà 0.
 
+//CHIEDI ALL UTENTE LA SUA ETà E STAMPA LA RISPOSTA: SE è MAGGIORENNE STAMPA SEI MAGGIORENNE, SE MINORENNE STAMPA SEI MINORENNE.
+/* let userAge1 = Number(prompt("Scrivi la tua età!"));
+console.log(userAge1);
+if (userAge1 >= 18) {
+    console.log("Sei maggiorenne!");
+} else if (userAge1 <= 17) {
+    console.log("Sei minorenne!");
+} */
+
+//VOTO SCOLASTICO CON TUTTE LE VALUTAZIONI.
+/* let votoStudente = 10;
+console.log(votoStudente);
+if (votoStudente <= 5) {
+    console.log("Insufficiente");
+} else if (votoStudente === 6) {
+    console.log("Sufficiente");
+} else if (votoStudente === 7) {
+    console.log("Buono");
+} else if (votoStudente === 8 || votoStudente === 9) {
+    console.log("Ottimo");
+} else {
+    console.log("Eccellente");
+} */
+//SPIEGAZIONE: LA CONDIZIONE PRINCIPALE è IL VOTO DELLO STUDENTE RACCHIUSO IN UN LET. UNA VOLTA VERIFICATO QUESTO VOTO HO APPLICATO LE RELATIVE VALUTAZIONI DA INSUFFCIENTE FIN AD ARRIVARE A ECCELLENTE! NELLA SEZIONE DELL OTTIMO (VOTO TRA 8/9) NON VA LA VIRGOLA MA L OPERATORE OR!
+
+//SCRIVI UN PICCOLO PROGRAMMA CHE CONTROLLI SE UN NUMERO è PARI O DISPARI
+/* let userNumber1 = Number(prompt("Scrivi un numero!"));
+if(userNumber1 % 2 === 0) {
+    console.log("E' un numero pari!");
+} else {
+    console.log("E' un numero dispari!");
+} */
+//SPIEGAZIONE: LA CONDIZIONE PRINCIPALE è IL NUMERO CHE L UTENTE SCRIVERà! SE IL NUMERO è DIVISIBILE PER 2 (MINOR NUMERO POSSIBILE PER SODDISFARE LA PARITà) E DA RESTO UGUALE A ZERO ALLORA STAMPO E UN NUMERO PARI, ALTRIMENTI STAMPA E UN NUMERO DISPARI!
+
+//VALUTA LA TEMPERATURA AMBIENTALE: SE è SOTTO I 10 GRADI SCRIVI FA FREDDO! SE è TRA 10 E 25 SCRVII TEMPERATURA PIACEVOLE. SE è SUPERIORE A 25 GRADI SCRIVI FA CALDO!
+let temperatura = 26;
+if(temperatura <= 10) {
+    console.log("Fa freddo!");
+} else if (temperatura > 10 && temperatura <= 25) {
+    console.log("Temperatura piacevole!")
+} else if (temperatura > 25) {
+    console.log("Fa caldo!");
+}
+//SPIEGAZIONE: LA CONDIZIONE PRINCIPALE è LA TEMPERATURA AMBIENTALE DA VERIFICARE E VALUTARE. SE LA TEMP è MINORE UGUALE DI 10 STAMPO FA FREDDO! SE LA TEMPERATURA è COMPRESA RTA 10 E 25 STAMPO TEMPERATURA PIACEVOLE (USANDO L OPERATORE && IL QUALE MI AIUTA A CONTROLLARE IL RANGE DA ME VOLUTO). SE LA TEMP è MAGGIORE DI 25 STAMPO FA CALDO!
+
+//LOGIN SEMPLICE. CHIEDI ALL UTENTE DI INSERIRE I SUOI DATI E CONTROLLA SE LA PASSWORD E L USERNAME DA LUI INSERITI SIANO CORRETTI.
+/* let userNomeUtente = prompt("Inserisci il nome utente:");
+let passwordUtente1 = Number(prompt("Inserisci la password:"));
+
+let userName4 = "admin";
+let passwordUtente2 = 1234;
+
+if (userNomeUtente === userName4 && passwordUtente1 === passwordUtente2) {
+    console.log("Accesso riuscito!")
+} else {
+    console.log("Accesso negato!")
+} */
+
+//CHIEDI ALL UTENTE 3 NUMERI E STAMPA IN CONSOLE IL NUMERO PIù GRANDE TRA LORO
+let userNumber1 = Number(prompt("Scrivi il primo numero"));
+let userNumber2 = Number(prompt("Scrivi il secondo numero"));
+let userNumber3 = Number(prompt("Scrivi il terzo numero"));
+console.log(userNumber1, userNumber2, userNumber3);
+
+if (userNumber1 >= userNumber2 && userNumber1 >= userNumber3) {
+    console.log("Il primo numero è il più grande")
+} else if (userNumber2 >= userNumber1 && userNumber2 >= userNumber3) {
+    console.log("Il secondo numero è il più grande")
+} else if (userNumber3 >= userNumber1 && userNumber3 >= userNumber2) {
+    console.log("Il terzo numero è il più grande")
+}
+
+
+
+
 
 //Ciclo For
 //Array
