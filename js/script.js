@@ -565,20 +565,159 @@ if (userNomeUtente === userName4 && passwordUtente1 === passwordUtente2) {
 } */
 
 //CHIEDI ALL UTENTE 3 NUMERI E STAMPA IN CONSOLE IL NUMERO PIù GRANDE TRA LORO
-let userNumber1 = Number(prompt("Scrivi il primo numero"));
+/* let userNumber1 = Number(prompt("Scrivi il primo numero"));
 let userNumber2 = Number(prompt("Scrivi il secondo numero"));
 let userNumber3 = Number(prompt("Scrivi il terzo numero"));
 console.log(userNumber1, userNumber2, userNumber3);
 
 if (userNumber1 >= userNumber2 && userNumber1 >= userNumber3) {
-    console.log("Il primo numero è il più grande")
+    console.log("Il primo numero è il più grande");
 } else if (userNumber2 >= userNumber1 && userNumber2 >= userNumber3) {
-    console.log("Il secondo numero è il più grande")
+    console.log("Il secondo numero è il più grande");
 } else if (userNumber3 >= userNumber1 && userNumber3 >= userNumber2) {
-    console.log("Il terzo numero è il più grande")
-}
+    console.log("Il terzo numero è il più grande");
+} */
 
+//CHIEDI ALL UTENTE UN NUMERO. SE è DIVISIBILE PER 3 STAMPA "è MULTIPLO DI 3" ALTRIMENTI STAMPA "NON è MULTIPLO DI 3"
+/* let userNumber = Number(prompt("Scrivi un numero"))
+console.log(userNumber);
 
+if (userNumber % 3 === 0) {
+    console.log("Il numero è un multiplo di 3");
+} else {
+    console.log("Il numero non è un multiplo di 3");
+} */
+
+//CHIEDI UN NUMERO ALL UTENTE E INDOVINA SE è MAGGIORE DI 100 STAMPA "NUMERO PIù GRANDE DI 100". SE è PIù PICCOLO STAMPA "NUMERO è PIù PICCOLO DI 100". SE UGUALE SCRIVI "NUMERO UGUALE A 100"
+/* let userNumber = Number(prompt("Scrivi un numero"));
+console.log(userNumber);
+ if (userNumber < 100) {
+    console.log("Il numero è minore di 100");
+ } else if (userNumber === 100) {
+    console.log("Il numero è uguale a 100");
+ } else {
+    console.log("il numero è maggiore di 100");
+ }
+ */
+
+//CHIEDI ALL UTENTE UNA PAROLA. SE INIZIA PER A STAMPA CHE LA PAROLA INIZIA PER A. SE FINISCE CON Z STAMPA CHE FINISCE CON Z. ALTRIMENTI STAMPA è UNA PAROLA NORMALE.
+/* let userWord = prompt("Scrivi una parola")
+
+if (userWord.startsWith("A")) {
+    console.log("La parola inizia con A");
+} else if (userWord.startsWith("a")) {
+    console.log("La parola inizia con a");
+} else if (userWord.endsWith("z")) {
+    console.log("La parola finisce con z")
+} else {
+    console.log("E' una parola normale")
+} */
+
+//CHIEDI ALL UTENTE DUE NUMERI E VERIFICA CHI DEI DUE è IL MAGGIORE, IL MINORE O SE SONO UGUALI
+/* let userNumber1 = Number(prompt("Scrivi il primo numero"))
+let userNumber2 = Number(prompt("Scrivi il secondo numero"))
+console.log(userNumber1, userNumber2);
+
+if (userNumber1 > userNumber2) {
+    console.log("Il primo numero è maggiore");
+} else if (userNumber1 < userNumber2) {
+    console.log("Il secondo numero è maggiore");
+} else if (userNumber1 === userNumber2) {
+    console.log("I numeri sono uguali");
+} */
+
+//CONTROLLO PASSWORD SICURA. CHIEDI ALL UTENTE UNA PASSWORD. CONSIDERA LA PASSWORD SICURA SE CONTIENE ALMENO UNA LETTERA MAIUSCOLA, UN NUMERO ED è ALMENO DI 8 CARATTERI. SE NON SODDISFA QUESTI REQUISITI STAMPA PASSWORD DEBOLE
+/* let userPassword = prompt("Scrivi QUI la tua password");
+console.log(userPassword);
+
+if (userPassword.length >= 8 && /[0-9]/.test(userPassword) && /[A-Z]/.test(userPassword) && /[\!\@\#\$\%\^\&\*]/.test(userPassword)) {
+    console.log("PASSWORD SICURA");
+} else {
+    console.log("PASSWORD DEBOLE, DEVE CONTENERE UNA LETTERA MAIUSCOLA, UN NUMERO, UN CARATTERE SPECIALE ED ESSERE LUNGA ALMENO 8 CARATTERI!");
+} */
+
+//CHIEDI UN NUMERO ALL UTENTE. STAMPA PARI SE è PARI. STAMPA DISPARI SE è DISPARI
+/* let userNumber = Number(prompt("Scrivi un numero"));
+console.log(userNumber);
+
+if(userNumber % 2 === 0) {
+    console.log("PARI");
+} else {
+    console.log("DISPARI");
+} */
+
+//CHIEDI UN NUMERO ALL UTENTE. SE è POSITIVO STAMPA POSITIVO, SE NEGATIVO STAMPA NEGATIVO SE è ZERO STAMPA ZERO.
+/* let userNumber = Number(prompt("Scrivi un numero"));
+console.log("userNumber");
+
+if(userNumber > 0) {
+    console.log("POSITIVO");
+} else if (userNumber < 0) {
+    console.log("NEGATIVO");
+} else if (userNumber === 0) {
+    console.log("ZERO");
+} */
+
+//CHIEDI ALL UTENTE DUE NUMERI. STAMPA QUALE DEI DUE è MAGGIORE O SE SONO UGUALI
+/* let userNumber = Number(prompt("Scrivi il primo numero"));
+let userNumber2 = Number(prompt("Scrivi il secondo numero"));
+console.log(userNumber, userNumber2);
+
+if(userNumber > userNumber2) {
+    console.log(userNumber);
+} else if (userNumber < userNumber2) {
+    console.log(userNumber2);
+} else if (userNumber === userNumber2) {
+    console.log("I NUMERI SONO UGUALI");
+} */
+
+//CHIEDI ALL UTENTE UN NUMERO DA 1 A 10. STAMPA IL RELATIVO VOTO SCOLASTICO ASSOCIATO
+/* let userNumber = Number(prompt("Scrivi un numero da 1 a 10"));
+console.log(userNumber);
+
+if(userNumber > 10) {
+    console.log("NUMERO NON VALIDO");
+} else if (userNumber < 6) {
+    console.log("Insufficiente");
+}else if (userNumber === 6 || userNumber === 7 ) {
+    console.log("Sufficiente");
+} else if (userNumber === 8) {
+    console.log("Buono")
+} else if (userNumber === 9) {
+    console.log("Distinto");
+} else if (userNumber === 10) {
+    console.log("Ottimo");
+} */
+
+//CHIEDI ALL UTENTE LA SUA ETà E POI STAMPA LA RELATIVA FASCIA D ETà D APPARTENENZA
+/* let userAgee = Number(prompt("Scrivi la tua età"));
+console.log(userAgee);
+
+if(userAgee < 13) {
+    console.log("SEI UN BAMBINO");
+} else if (userAgee >= 13 && userAgee <= 17) {
+    console.log("SEI ADOLESCENTE");
+} else if (userAgee >= 18 && userAgee <= 64) {
+    console.log("SEI ADULTO");
+} else if (userAgee >= 65) {
+    console.log("SEI ANZIANO")
+} */
+
+//CHIEDI ALL UTENTE UN NUMERO DA 1 A 4 E STAMPA LA RELATIVA STAGIONE ASSOCIATA
+/* let userNumber = Number(prompt("Scrivi un numero da 1 a 4"));
+console.log(userNumber);
+
+if(userNumber === 1) {
+    console.log("Inverno");
+} else if (userNumber === 2) {
+    console.log("Primavera");
+} else if (userNumber === 3) {
+    console.log("Estate");
+} else if (userNumber === 4) {
+    console.log("Autunno");
+} else {
+    console.log("NUMERO NON VALIDO")
+} */
 
 
 
