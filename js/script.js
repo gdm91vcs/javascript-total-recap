@@ -719,6 +719,24 @@ if(userNumber === 1) {
     console.log("NUMERO NON VALIDO")
 } */
 
+//CHIEDI ALL UTENTE 3 NUMERI. STAMPA SOLO QUELLO PIù GRANDE
+/* let userNumber = Number(prompt("Scrivi il primo numero"));
+let userNumber2 = Number(prompt("Scrivi il secondo numero"));
+let userNumber3 = Number(prompt("Scrivi il terzo numero"));
+console.log(userNumber, userNumber2, userNumber3);
+
+if (userNumber > userNumber2 && userNumber > userNumber3) {
+    console.log(userNumber);
+} else if (userNumber2 > userNumber && userNumber2 > userNumber3) {
+    console.log(userNumber2);
+} else if (userNumber3 > userNumber && userNumber3 > userNumber2) {
+    console.log(userNumber3);
+} else if (userNumber === userNumber2 || userNumber === userNumber3 || userNumber2 === userNumber3) {
+    console.log("I NUMERI SONO UGUALI");
+} */
+
+
+
 
 
 //Ciclo For
