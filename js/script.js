@@ -890,11 +890,6 @@ let userNumber1 = Number(prompt("Scrivi il primo numero"))
 let userNumber2 = Number(prompt("Scrivi il secondo numero"))
 let userNumber3 = Number(prompt("Scrivi il terzo numero"))
 
-if (userNumber1 + userNumber2 > userNumber3
-    &&
-    userNumber2 + userNumber3 > userNumber1
-    &&
-    userNumber3 + userNumber1 > userNumber2) 
 if (userNumber1 === userNumber2 
     && 
     userNumber2 === userNumber3) {
