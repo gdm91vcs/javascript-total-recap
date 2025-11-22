@@ -735,9 +735,187 @@ if (userNumber > userNumber2 && userNumber > userNumber3) {
     console.log("I NUMERI SONO UGUALI");
 } */
 
+//CHIEDI ALL UTENTE 3 NUMERI (LATI). CONTROLLA SE POSSONO FORMARE UN TRIANGOLO EQUILATERO, ISOSCELE O SCALENO.
+/* let userNumber = Number(prompt("Scrivi il primo numero"));
+let userNumber2 = Number(prompt("Scrivi il secondo numero"));
+let userNumber3 = Number(prompt("Scrivi il terzo numero"));
+console.log(userNumber, userNumber2, userNumber3);
 
+if (userNumber === 0 && userNumber2 === 0 && userNumber3 === 0) {
+    console.log("NUMERI NON VALIDI! INSERIRE NUMERI REALI!")
+} else if (userNumber === userNumber2 && userNumber2 === userNumber3) {
+   console.log("Puoi creare un triangolo equilatero");
+} else if (
+    userNumber === userNumber2 && userNumber3 !== userNumber && userNumber2 
+    ||
+    userNumber2 === userNumber3 && userNumber !== userNumber2 && userNumber3
+    ||
+    userNumber3 === userNumber && userNumber2 !== userNumber3 && userNumber) {
+    console.log("Puoi creare un triangolo isoscele")
+} else if (userNumber !== userNumber2 && userNumber !== userNumber3) {
+    console.log("Puoi creare un triangolo scaleno")
+} */
 
+//CHIEDI UN NUMERO DA 1 A 23 E STAMPA LA RELATIVA FASCIA ORARIA
+/* let userOra = Number(prompt("Scrivi un numero da 0 a 23"));
+console.log(userOra);
 
+if (userOra >= 0 && userOra <= 5) {
+    console.log("Notte");
+} else if (userOra >= 6 && userOra <= 11) {
+    console.log("Mattina");
+} else if (userOra >= 12 && userOra <= 17) {
+    console.log("Pomeriggio");
+} else if (userOra >= 18 && userOra <= 23) {
+    console.log("Sera");
+} else {
+    console.log("ORA NON VALIDA! INSERIRE L' ORARIO CORRETTO!")
+} */
+
+//CHIED ALL UTENTE UNA DATA QUALSIASI. CONTROLLA SE QUEL VALORE è BISESTILE.
+/* let userData = Number(prompt("Scrvi una data qualsiasi"));
+console.log(userData);
+
+if (userData === 0) {
+    console.log("DATA NON VALIDA! SCRIVERE UN DATA CORRETTA!")
+} else if (userData % 400 === 0) {
+    console.log("Non è un anno bisestile!");
+} else if (userData % 100 === 0) {
+    console.log("Non è un anno bisestile!");
+} else if (userData % 4 === 0) {
+    console.log("E' un anno bisestile!");
+} else {
+    console.log("Non è un anno bisestile!")
+} */
+
+//CHIEDI ALL UTENTE DI SCEGLIERE UN TIPO DI CAFFè ASSOCIATO AI NUMERI 1, 2 E 3 E STAMPA COSA HA SCELTO.
+
+/* let userCaffè = Number(prompt("Scegli il tuo caffè tra 1, 2 e 3:"));
+console.log("userCaffè");
+ if (userCaffè === 0) {
+    console.log("SCELTA NON VALIDA!");
+ } else if (userCaffè === 1) {
+    console.log("Hai scelto CAFFE' ESPRESSO")
+ } else if (userCaffè === 2) {
+    console.log("Hai scelto CAPPUCCINO")
+ } else if (userCaffè === 3) {
+    console.log("Hai scelto LATTE MACCHIATO")
+ } else {
+    console.log("SCELTA NON VALIDA!")
+ } */
+
+//CHIEDO ALL UTENTE UN PREZZO INTERO. APPLICA POI LO SCONTO ASSOCIATO AD ESSO.
+/* let userPrezzo = Number(prompt("Scrivi un prezzo"))
+console.log("userPrezzo");
+
+if (userPrezzo === 0) {
+    console.log("PREZZO NON VALIDO!");
+} else if (userPrezzo < 50) {
+    console.log("Nessuno sconto applicabile!");
+} else if (userPrezzo > 100) {
+    console.log("Hai lo sconto del 20%");
+} else if (userPrezzo > 50 || userPrezzo < 100) {
+    console.log("Hai lo sconto del 10%")
+} */
+
+//CHIEDO IL NOME ALL UTENTE. SE CORRISPONDE AI NOMINATIVI GIUSTI HA L ACCESSO CONSENTITO ALTRIMENTI NO.
+/* let userNamee = prompt("Scrivi il tuo nome per l'accesso")
+console.log(userNamee);
+
+const userName1 = "Gabriele";
+const userName22 = "Marco";
+const userName3 = "Franco";
+
+if (userNamee === userName1 || userNamee === userName22 || userNamee === userName3) {
+    console.log("ACCESSO RIUSCITO");
+} else {
+    console.log("ACCESSO NEGATO")
+} */
+
+//CHIEDI L ETà ALL UTENTE E STAMPA LA FASCIA D ETà CORRISPONDENTE
+/* let userAgee = Number(prompt("Scrivi qui la tua età"));
+console.log(userAgee);
+
+if (userAgee >= 0 && userAgee <= 2) {
+    console.log("Neonato");
+} else if (userAgee >= 3 && userAgee <= 12) {
+    console.log("Bambino");
+} else if (userAgee >= 13 && userAgee <= 17) {
+    console.log("Ragazzo");
+} else if (userAgee >= 18 && userAgee <= 64) {
+    console.log("Adulto");
+} else {
+    console.log("Anziano");
+} */
+
+//CALCOLATRICE AVANZATA. CHIEDI ALL UTENTE NUMERO 1 E NUMERO 2 E STAMPA TUTTI I RISULTATI DELLE VARIE OPERAZIONI MATEMATICHE
+/* let userNumber1 = parseFloat(prompt("Scrivi qui il primo numero"));
+let userOperation = prompt("Scrivi qui l'operazione che desideri effettuare (+,-,*,/,%)");
+let userNumber2 = parseFloat(prompt("Scrivi qui il secondo numero"));
+console.log(userNumber1, userOperation, userNumber2);
+
+if (userNumber2 === 0 && userOperation === "/" || userNumber2 === 0 && userOperation === "%") {
+    console.log("L'operazione è impossibile!")
+} else if (userOperation === "+") {
+    console.log(userNumber1 + userNumber2);
+} else if (userOperation === "-") {
+    console.log(userNumber1 - userNumber2);
+} else if (userOperation === "*") {
+    console.log(userNumber1 * userNumber2);
+} else if (userOperation === "/") {
+    console.log(userNumber1 / userNumber2);
+} else if (userOperation === "%") {
+    console.log(userNumber1 % userNumber2);
+} else {
+    console.log("Operazione non valida");
+} */
+
+//TRIANGOLO VALIDO. CHIEDI ALL UTENTE 3 NUMERI (I LATI DI UN TRIANGOLO). è UN TRIANGOLO VALIDO SE OGNI LATO è MINORE DELLA SOMMA DEGLI ALTRI DUE.
+/* let userNumber1 = Number(prompt("Scrivi il primo numero"))
+let userNumber2 = Number(prompt("Scrivi il secondo numero"))
+let userNumber3 = Number(prompt("Scrivi il terzo numero"))
+
+if (userNumber1 + userNumber2 > userNumber3
+    &&
+    userNumber2 + userNumber3 > userNumber1
+    &&
+    userNumber1 + userNumber3 > userNumber2) {
+    console.log("Triangolo valido")
+} else {
+    console.log("Tringolo non valido");
+} */
+
+//CONTROLLA SE IL TRIANGOLO è EQUILATERO, ISOSCELE O SCALENO
+let userNumber1 = Number(prompt("Scrivi il primo numero"))
+let userNumber2 = Number(prompt("Scrivi il secondo numero"))
+let userNumber3 = Number(prompt("Scrivi il terzo numero"))
+
+if (userNumber1 + userNumber2 > userNumber3
+    &&
+    userNumber2 + userNumber3 > userNumber1
+    &&
+    userNumber3 + userNumber1 > userNumber2) 
+if (userNumber1 === userNumber2 
+    && 
+    userNumber2 === userNumber3) {
+    console.log("Triangolo Equilatero")
+} else if (
+    userNumber1 === userNumber2
+    ||
+    userNumber2 === userNumber3
+    ||
+    userNumber3 === userNumber1) {
+        console.log("Triangolo isoscele");
+} else if (
+    userNumber1 !== userNumber2
+    &&
+    userNumber2 !== userNumber3  
+    &&
+    userNumber3 !== userNumber1) {
+    console.log("Triangolo scaleno");
+} else {
+    console.log("Triangolo non valido")
+}
 
 //Ciclo For
 //Array
