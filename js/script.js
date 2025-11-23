@@ -886,7 +886,7 @@ if (userNumber1 + userNumber2 > userNumber3
 } */
 
 //CONTROLLA SE IL TRIANGOLO è EQUILATERO, ISOSCELE O SCALENO
-let userNumber1 = Number(prompt("Scrivi il primo numero"))
+/* let userNumber1 = Number(prompt("Scrivi il primo numero"))
 let userNumber2 = Number(prompt("Scrivi il secondo numero"))
 let userNumber3 = Number(prompt("Scrivi il terzo numero"))
 
@@ -911,8 +911,158 @@ if (userNumber1 === userNumber2
 } else {
     console.log("Triangolo non valido")
 }
+ */
 
-//Ciclo For
+//CICLO FOR
+//ESEMPI:
+//CONTARE DA 0 A 4:
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+//CONTARE DA 1 A 5:
+for (let i = 1; i < 6; i++) {
+    console.log(i);
+}
+
+//CONTARE ALL INDIETRO:
+for (let i = 5; i >= 1; i--) {
+    console.log(i);
+}
+
+//RIPETERE UNA PAROLA 3 VOLTE:
+for (let i = 0; i < 3; i++) {
+    console.log("Ciao");
+}
+
+//SALATARE DI 2 IN 2 FINO A 10:
+for (let i = 0; i <= 10; i += 2) {
+    console.log(i);
+}
+
+//STAMPARE "GIRO NUMERO...":
+for (let i = 1; i <= 10; i++) {
+    console.log("Giro numero "+ i);
+}
+
+//ESEGUIRE UN GIRO ANCHE SENZA USARE i:
+for (let i = 1; i <= 10; i++) {
+    console.log("Sto girando...");
+}
+
+//ALTRI ESERCIZI:
+//STAMPA I NUMERI DA 0 A 3:
+for (let i = 0; i <= 3; i++) {
+    console.log(i);
+}
+
+//STAMPA I NUMERI DA 1 A 4:
+for (let i = 1; i <= 4; i++) {
+    console.log(i);
+}
+
+//STAMPA LA PAROLA "CIAO" 5 VOLTE:
+for (let i = 1; i <= 5; i ++) {
+    console.log("Ciao");
+}
+
+//CONTA ALL INDIETRO DA 4 A 1:
+for (let i = 4; i >= 1; i--) {
+    console.log(i);
+}
+
+//STAMPA SOLO I NUMERI PARI DA 0 A 10:
+for (let i = 0; i <= 10; i += 2) {
+    console.log(i);
+}
+
+//STAMPA SOLO I NUMERI DISPARI DA 0 A 10:
+for (let i = 0; i <= 10; i += 3) {
+    console.log(i);
+}
+
+//CONTA DA 2 A 10 SALTANDO DI 2:
+for (let i = 2; i <= 10; i += 2) {
+    console.log(i);
+}
+
+//CONTA DA 5 A 20 SALTANDO DI 5:
+for (let i = 5; i <= 20; i += 5) {
+    console.log(i);
+}
+
+//CONTA ALL INDIETRO DA 10 A 0 SALTANDO DI 2:
+for (let i = 10; i <= 1; i += 2) {
+    console.log(i);
+}
+
+//STAMPA I NUMERI DA 3 A 15 E SALI DI 3 ALLA VOLTA:
+for (let i = 3; i <= 15; i += 3) {
+    console.log(i)
+}
+
+//CONTA ALL INDIETRO DA 10 A 0 SALTANDO DI 2:
+for (let i = 10; i >= 0; i -= 2) {
+    console.log(i)
+}
+
+//STAMPA 7 VOLTE LA FRASE "STO IMPARANDO!":
+for (let i = 1; i <= 7; i ++) {
+    console.log("Sto imparando!");
+}
+
+//STAMPA I NUMERI DA 10 A 50 SALTANDO DI 10:
+for (let i = 10; i <= 50; i += 10) {
+    console.log(i)
+}
+
+//STAMPA I NUEMRI DA -5 A 5:
+for (let i = -5; i <= 5; i++) {
+    console.log(i)
+}
+
+//CONTA DA 1 A 9 MA STAMPA SOLO I MULTIPLI DI 3:
+for (let i = 3; i <= 9; i += 3) {
+    console.log(i);
+}
+
+//CONTA ALL INDIETRO DA 20 A 5:
+for (let i = 20; i >= 5; i--) {
+    console.log(i);
+}
+
+//CONTA DA 0 A 30 SALTANDO DI 7:
+for (let i = 0; i <= 30; i += 7) {
+    console.log(i)
+}
+
+//STAMPA I NUMERI DA 100 A 50 SCENDENDO DI 5:
+for (let i = 100; i >= 50; i -= 5) {
+    console.log(i)
+}
+
+//STAMPA BOOM 12 VOLTE MA FAI INIZIARE I DA 3 (IL CICLO NON PARTE DA 0):
+for (let i = 3; i <= 14; i++) {
+    console.log("BOOM")
+}
+
+//CONTA ESATTAMENTE 4 A 14 MA ASSICURATI DI STAMPARLI ESATTAMENTE 6 VOLTE:
+for (let i = 4; i <= 14; i += 2) {
+    console.log(i);
+}
+
+//STAMPA I NUMERI DISPARI DA 1 A 19:
+for (let i = 1; i <= 19; i +=2) {
+    console.log(i);
+}
+
+//STAMPA LA FRASE "CICLO NUMERO..." PER I VALORI DA 5 A 10:
+for (let i = 5; i <= 10; i++) {
+    console.log("Ciclo numero " + i);
+}
+
+
+
 //Array
 //Oggetti
 //Funzioni
