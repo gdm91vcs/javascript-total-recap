@@ -1061,6 +1061,189 @@ for (let i = 5; i <= 10; i++) {
     console.log("Ciclo numero " + i);
 }
 
+//STAMPA I NUMERI DA 1 A 5:
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+//STAMPA I NUMERI DA 2 A 6:
+for (let i = 2; i <= 6; i++) {
+    console.log(i);
+}
+
+//STAMPA LA PAROLA "OK" 4 VOLTE:
+for (let i = 0; i <= 3; i++) {
+    console.log("OK");
+}
+
+//STAMPA I NUMERI DA 10 A 7:
+for (let i = 10; i >= 7; i--) {
+    console.log(i);
+}
+
+//STAMPA SOLO I NUMERI PARI DA 2 A 12:
+for (let i = 2; i <= 12; i += 2) {
+    console.log(i);
+}
+
+//CONTA DA 3 A 21 SALTANDO DI 3:
+for (let i = 3; i <= 21; i += 3) {
+    console.log(i);
+}
+
+//CONTA DA 7 A 35 SALTANDO DI 7:
+for (let i = 7; i <= 35; i += 7) {
+    console.log(i);
+}
+
+//CONTA ALL INDIETRO DA 16 A 0 SALTANDO DI 4:
+for (let i = 16; i >= 0; i -= 4) {
+    console.log(i);
+}
+
+//STAMPA I NUMERI DA 5 A 25 SALENDO DI 5:
+for (let i = 5; i <= 25; i += 5) {
+    console.log(i);
+}
+
+//STAMPA 6 VOLTE "FORZA!":
+for (let i = 1; i <= 6; i++) {
+    console.log("FORZA!");
+}
+
+//STAMPA I NUMERI DA 15 A 60 SALTANDO DI 15:
+for (let i = 15; i <= 60; i += 15) {
+    console.log(i);
+}
+
+//STAMPA I NUMERI DA -10 A 0:
+for (let i = -10; i <= 0; i++) {
+    console.log(i);
+}
+
+//STAMPA SOLO I MULTIPLI DI 4 DA 4 A 20:
+for (let i = 4; i <= 20; i += 4) {
+    console.log(i);
+}
+
+//CONTA ALL INDIETRO DA 30 A 10:
+for (let i = 30; i >= 10; i--) {
+    console.log(i);
+}
+
+//STAMPA I NUMERI DA 1 A 40 SALTANDO DI 9:
+for (let i = 1; i <= 40; i += 9) {
+    console.log(i);
+}
+
+//STAMPA I NUMERI DA 200 A 150 SCENDENDO DI 10:
+for (let i = 200; i >= 150; i -= 10) {
+    console.log(i);
+}
+
+//STAMPA "VIA!" 8 VOLTE MA FAI INIZIARE i DA 5:
+for (let i = 1; i <= 8; i++) {
+    console.log("VIA!");
+}
+
+//STAMPA I NUMERI DA 10 A 20 MA DEVI STAMPARNE ESATTAMENTE 6:
+for (let i = 10; i <= 20; i += 2) {
+    console.log(i);
+}
+
+//STAMPA I NUMERI DISPARI DA 3 A 27 USANDO i += 2:
+for (let i = 3; i <= 27; i += 2) {
+    console.log(i);
+}
+
+//STAMPA "SONO AL CICLO NUMERO..." CON VALORI DA 12 A 18:
+for (let i = 12; i <= 18; i++) {
+    console.log("Sono al ciclo numero "+ i);
+}
+
+//STAMPA I NUMERI DA 100 A 50 SCENDENDO DI 3:
+for (let i = 100; i >= 50; i -= 3) {
+    console.log(i);
+}
+console.log(50);//forzatura manuale
+
+//STAMPA I NUMERI DA -30 A 30 SALENDO DI 6:
+for (let i = -30; i <= 30; i += 6) {
+    console.log(i);
+}
+
+//USA UN CICLO CHE VA DA 0 A 10 MA STAMPA i x 5:
+for (let i = 0; i <= 10; i++) {
+    console.log(i * 5);
+}
+
+//USA UN FOR CHE VA DA 10 A 20 MA STAMPA I VALORI i - 10:
+for (let i = 10; i <= 20; i++) {
+    console.log(i - 10);//shift matematico
+}
+
+//CONTA DA 1 A 7 MA STAMPA IL QUADRATO DEL NUMERO:
+for (let i = 1; i <= 7; i++) {
+    console.log(i * i);//calcola il quadrato senza modificare i
+}
+
+//FAI UN FOR DA 20 A 40 MA STAMPA SOLO NUMERI PARI:
+for (let i = 20; i <= 40; i += 2) {
+    console.log(i);
+}
+
+//CICLA DA 50 A 70 MA STAMPA i + 100:
+for (let i = 50; i <= 70; i++) {
+    console.log(i + 100);
+}
+
+//CICLA DA 0 A 5 MA STAMPA UNA SEQUENZA DISCENDENTE USANDO 5-i:
+for (let i = 0; i <= 5; i++) {
+    console.log(5 - i);//crea l inverso del risultato
+}
+
+//CONTA DA 0 A 12 SALENDO DI 3:
+for (let i = 0; i <= 12; i += 3) {
+    console.log(i);
+}
+
+//CICLA CHE VA DA 1 A 5 MA STAMPA i*10 + i:
+for (let i = 1; i <= 5; i++) {
+    console.log(i * 10 + i);//moltiplica i x 10 e aggiunge i vicino (senza sommare)! tipo: 1+1= 11 - 2+2= 22 ecc...
+}
+
+//CICLA DA 3 A 12 MA STAMPA LA METà DEI VALORI:
+for (let i = 3; i <= 12; i++) {
+    console.log(i / 2);//applicazione divisione
+}
+
+//CICLA DA 0 A 9 MA STAMPA i IN FORMA INVERTITA:
+for (let i = 0; i <= 9; i++) {
+    console.log((9-i)*2);//inverte l' ordine di i e lo raddoppia x2!
+}
+
+//CICLA DA 10 A 100 SALENDO DI 10
+for (let i = 10; i <= 100; i += 10) {
+    console.log(i);
+}
+
+//CICLA DA 1 A 8 MA STAMPA 3 X(i-1)
+for (let i = 1; i <= 8; i++) {
+    console.log((i-1)*3);//trasforma la sequenza naturale aggiungendo lo zero e togliendo però l ultimo valore (non più da 1 a 8 ma da 0 a 7) e con il 3* ho detto di moltiplicare ogni valore che abbiamo adesso x3!
+}
+
+//CICLA DA 0 A 4 MA STAMPA UN CONTO ALLA ROVESCIA:
+for(let i = 0; i <= 4; i++) {
+    console.log(20-(i*4));//i*4 crea la sequenza da 0 a 16. 20-(i*4) sottrae questi numeri da 20
+}
+
+
+
+
+
+
+
+
 
 
 //Array
