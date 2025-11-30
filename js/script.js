@@ -1237,6 +1237,179 @@ for(let i = 0; i <= 4; i++) {
     console.log(20-(i*4));//i*4 crea la sequenza da 0 a 16. 20-(i*4) sottrae questi numeri da 20
 }
 
+//FORMULE DI SEQUENZA
+//ESERCIZI:
+
+//FOR DA 0 A 5 STAMPA i * 2:
+for (let i = 0; i <= 5; i++) {
+    console.log(i*2);//moltiplica i numeri naturali i x 2
+}
+
+//FOR DA 0 A 4 STAMPA 10-i:
+for (let i= 0; i <= 4; i++) {
+    console.log(10-i);//sottrae i numeri naturali di i a 10
+}
+//FOR DA 1 A 7 STAMPA (i-1)*4:
+for (let i = 1; i <= 7; i++) {
+    console.log((i-1)*4);//fa scalare di un numero la sequenza naturale di i e poi moltiplica il risultato x 4
+}
+
+//FOR DA 1 A 5 STAMPA i-1:
+for (let i = 1; i <= 5; i++) {
+    console.log(i-1);//fa scalare di 1 la sequenza naturale di i
+}
+
+//STAMPA LA SEQUENZA DEI NUMERI PARI PARTENDO DA 0 FINO A 10:
+for (let i = 0; i <= 10; i +=2) {
+    console.log(i);
+}
+
+//ARRAY:
+//LISTA DELLA SPESA:
+/* let spesa = ["pane","latte", "uova"]; */
+//AGGIUNGIAMO BURRO ALLA FINE DELL ARRAY:
+/* spesa.push("burro");
+console.log(spesa); */
+//RIMUOVI IL PRIMO ELEMENTO:
+/* spesa.shift();
+console.log(spesa); */
+//CONTROLLA SE LATTE è ANCORA PRESENTE NELL ARRAY
+/* console.log(spesa.includes("latte"));
+console.log(spesa.includes("arancia")); */
+//TROVA L INDICE DI UOVA:
+/* console.log(spesa.indexOf("uova")); */
+//TRASFORMA L ARRAY IN UNA STRINGA SEPARATA DA VIRGOLE:
+/* let stringaSpesa = spesa.join(", ");
+console.log(stringaSpesa) */
+
+//ARRAY DI NUMERI:
+/* let numeriArray = [10, 20, 30, 40, 50];
+console.log(numeriArray); */
+//RIMUOVI L ULTIMO NUMERO:
+/* console.log(numeriArray.pop());//stampa solo 50
+console.log(numeriArray);//stampa l array senza il 50 */
+//AGGIUNGI 60 ALL INIZIO DELL ARRAY:
+/* console.log(numeriArray.unshift(60)); */
+//SOSTITUISCI IL NUMERO 20 CON 25:
+/* console.log(numeriArray.splice(1, 0, 25)); */
+//CREA UN NUOVO ARRAY CHE CONTENGA SOLO I PRIMI 3 NUMERI:
+/* console.log(numeriArray.slice(0, 3)); */
+
+//ARRAY NOMI:
+/* let nomi = ["Anna","Luca","Marco"];
+console.log(nomi); */
+//AGGIUNGI GIULIA E SIMONE ALLA FINE DELL ARRAY:
+/* console.log(nomi.push("Giulia","Simone")) */
+//RIMUOVI ANNA DALL INIZIO:
+/* console.log(nomi.shift()); */
+//TROVA L INDICE DI MARCO:
+/* console.log(nomi.indexOf("Marco")); */
+//CREA UN NUOVO ARRAY CON SOLO GLI ULTIMI DUE NOMI:
+/* console.log(nomi.slice(3)); */
+//TRSFORMA IL NUOVO ARRAY APPENA FATTO IN UNA STRINGA:
+/* console.log(nomi.slice(3).join(", ")); */
+//ARRAY FRUTTI:
+/* let fruttii = ["mela","banana","arancia"];
+console.log(frutti); */
+//CHIEDI ALL UTENTE DI INSERIRE UN FRUTTO:
+/* let userFruit = prompt("Inserisci un frutto!");
+console.log(userFruit); */
+//CONTROLLA SE IL FRUTTO E' PRESENTE NEL ARRAY OPPURO NO!
+/* if (fruttii.includes(userFruit)) {
+    console.log("Frutto trovato!");
+} else {
+    fruttii.push(userFruit);
+    console.log(fruttii);
+} */
+
+//GESTIONE PLAYLIST:
+let playList = ["Song1", "Song2", "Song3"];
+/* console.log(playList); */
+//AGGIUNGI SON4 E SONG5:
+playList.push("Song4","Song5");
+console.log(playList);
+//RIMUOVI L ULTIMA CANZONE:
+playList.pop();
+console.log(playList);
+//TROVA L INDICE DI SONG2:
+console.log(playList.indexOf("Song2"));
+//RIMUOVI SONG2 DALL ARRAY:
+playList.splice(1,1);
+console.log(playList);
+//TRASFORMA LA NUOVA ARRAY UN UN ASTRINGA SEPARATA DA ;
+console.log(playList.join("; "));
+
+//CONTROLLO LUNGHEZZA E AGGIUNTA:
+let lista = [];
+//CHIEDI ALL UTENTE DI INSERIRE 3 ELEMENTI:
+/* let userElem1 = prompt("Scrivi qualcosa");
+let userElem2 = prompt("Scrivi qualcosa");
+let userElem3 = prompt("Scrivi qualcosa"); */
+//AGGIUNGILI ALL ARRAY:
+/* lista.push(userElem1, userElem2, userElem3);
+console.log(lista); */
+//STAMPA LA LUNGHEZZA DELL ARRAY:
+/* console.log(lista.length); */
+//AGGIUNGI UN ALTRO ELEM ALL INIZIO:
+/* lista.unshift("t");
+console.log(lista); */
+//RIMUOVI IL SECONDO ELEMENTO:
+/* lista.splice(2,1);
+console.log(lista); */
+
+//MANIPOLAZIONE DEI NUMERI:
+let numbers = [5, 10, 15, 20];
+console.log(numbers);
+//RIMUOVI IL PRIMO E L ULTIMO NUMERO:
+console.log(numbers.shift() && numbers.pop());
+//AGGIUNGI 1 ALL INIZIO E 25 ALLA FINE:
+console.log(numbers.unshift(1) && numbers.push(25));
+//TROVA IL NUMERO 15:
+console.log(numbers.indexOf(15));
+//CREA UN NUOVO ARRAY CON SOLO GLI ULTIMI 2 NUMERI:
+console.log(numbers.slice(2));
+
+//ARRAY CITTà:
+let città = ["Roma","Milano","Napoli"];
+console.log(città);
+//AGGIUNGI TORINO ALL INIZIO:
+città.unshift("Torino");
+console.log(città);
+//RIMUOVI MILANO:
+città.splice(2, 1);
+console.log(città);
+//CONTROLLA SE FIRENZE è NELL ARRAY:
+console.log(città.includes("Firenze"));
+//TRASFORMA L ARRAY IN UNA STRINGA SEPARATA DA |:
+console.log(città.join("| "));
+
+//GESTIONE DI UNA TO-DO-LIST:
+let toDoList = ["Studiare", "Fare la spesa", "Pulire casa"];
+console.log(toDoList);
+//AGGIUNGI CHIAMARE IDRAULICO ALLA FINE DELLA LISTA:
+toDoList.push("Chiamare l'idraulico");
+console.log(toDoList);
+//RIMUOVI STUDIARE DALL INIZIO:
+console.log(toDoList.splice(0,1));
+console.log(toDoList);
+//STAMPA L INDICE DI PULIRE CASA:
+console.log(toDoList.indexOf("Pulire casa"));
+//CREA UNA NUOVA ARRAY CON SOLO GLI ULTIMI DUE ELMENTI:
+console.log(toDoList.slice(1));
+
+//CONTROLLO ELEMENTI DUPLICATI:
+let animali = ["cane","gatto","cane","uccello"];
+console.log(animali);
+//TROVA LINDIE DELLA PRIMA OCCORRENZA DI CANE:
+console.log(animali.indexOf("cane"));
+//RIMUOVI IL PRIMO CANE:
+console.log(animali.splice(0,1));
+console.log(animali);
+//CONTROLLA SE CANE è ANCORA PRESENTE:
+console.log(animali.includes("cane"));
+//AGGIUNGI PESCE ALLA FINE E STAMPA L ARRAY FINALE:
+animali.push("pesce");
+console.log(animali);
 
 
 
@@ -1246,7 +1419,24 @@ for(let i = 0; i <= 4; i++) {
 
 
 
-//Array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Oggetti
 //Funzioni
 //DOM
