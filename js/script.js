@@ -1411,30 +1411,115 @@ console.log(animali.includes("cane"));
 animali.push("pesce");
 console.log(animali);
 
+//NUMERO RANDOM:
+/* let randomNum = Math.floor(Math.random()*10);
+console.log(randomNum); */
 
+//LANCIO DELLA MONETA:
+/* let lancioMoneta = Math.floor(Math.random()*2);
+if (lancioMoneta === 0) {
+    console.log("Testa");
+} else {
+    console.log("Croce");
+} */
 
+//GENERALE NUMERO CASUALE DA UN ARRAY:
+let colorii = ["rosso", "blue", "verde", "viola"];
+let casualColors = Math.floor(Math.random()*colorii.length);
+console.log(colorii[casualColors]);
 
+//SCOPE:
+//SCOPE GLOBALE:
+let colore = "rosso";//scope globale visibile in tuttp il codice
+console.log(colore);
 
+//SCOPE DI BLOCCO:
+/* const password = "12345";
+let userPassword = prompt("DIGITA LA PASSWORD");
 
+if (password === userPassword) {
+    console.log("ACCESSO CONSENTITO")//scope di blocco dentro le {}
+} else {
+    console.log("ACCESSO NEGATO");//scope di blocco dentro le {}
+} */
+/* console.log()//ERRORE */
 
+//PARTI DA UN ARRAY VUOTO ED AGGIUNGI AL SUO INTERO DEGLI ELEMENTI:
+/* let arrayEmpty = [];
+arrayEmpty.push("limone","arancia","melone","spinaci");
+console.log(arrayEmpty); */
 
+//PARTI DA UN ARRAY CON 3 ELEMENTI AGGIUNGI UN NUOVO ELEMENTO ALL INIZIO:
+/* let arrayThree = ["sedia","tavolo","fruttiera"];
+arrayThree.unshift("candelabro");
+console.log(arrayThree); */
 
+//PARTI DA UN ARRAY DI ALEMENO 5 ELEMENTI E TOGLI LULTIMO:
+/* let array = ["sedia", "tavolo", "fruttiera","candelabro", "bicchiere"];
+console.log(array.splice(4,1));
+console.log(array); */
 
+//PARTI DA UN ARRAY CON 4 ELEMENTI TOGLI IL PRIMO:
+/* let array = ["sedia", "tavolo", "fruttiera", "candelabro",];
+array.shift("sedia");
+console.log(array); */
 
+//CREA UN ARRAY CON 6 ELEMENTI E MOSTA QUANTI ELEM CI SONO:
+/* let array = ["sedia", "tavolo", "fruttiera", "candelabro", "bicchiere","lampadario"];
+console.log(array.length); */
 
+//CREA UN ARRAY CON ALCUNI VALORI RIPETUTI E TROVA LA POSIZIONE DELLA PRIMO OCCORRENZA DI UNO DI ESSI:
+/* let array = ["sedia", "tavolo", "fruttiera","fruttiera", "candelabro", "bicchiere", "bicchiere"];
+console.log(array.indexOf("fruttiera"));
+console.log(array.indexOf("bicchiere")); */
 
+//HAI UN ARRAY DI 5 ELEM MODIFICA IL TERZO ELEM:
+/* let array = ["sedia", "tavolo", "fruttiera", "candelabro", "bicchiere"];
+array[2] = "posacenere";
+console.log(array); */
 
+//CREA DUE ARRAY DIVERSI ED UNISCILI IN UN UNICO ARRAY CON SPREAD(...)
+/* let array = ["sedia", "tavolo", "fruttiera", "candelabro", "bicchiere"];
+let numerii = [10, 20, 30, 40, 50];
+let doubleArray = [...array, ...numerii];
+console.log(doubleArray); */
 
+//CREA DUE ARRAY DIVERSI ED UNISCILI IN UN UNICO ARRAY CON .CONCAT()
+/* let array = ["sedia", "tavolo", "fruttiera", "candelabro", "bicchiere"];
+let numerii = [10, 20, 30, 40, 50];
+let arrayUniti = array.concat(numerii);
+console.log(arrayUniti); */
 
+//CREA UN ARRAY DI 7 ELEM E RICAVA UN SECONDO ARRAY AVENTE SOLO UNA PARTE CENTRALE DEGLI ELEM
+//CREA DUE ARRAY DIVERSI ED UNISCILI IN UN UNICO ARRAY CON SPREAD(...)
+/* let array = ["sedia", "tavolo", "fruttiera", "candelabro", "bicchiere", "forchetta", "tovagliolo"];
+console.log(array.slice(2, 5)); */
 
+//CREA UN ARRAY POI RIMUOVI UN ELEMENTO DAL CENTRO E INSERIESCINE UNO NUOVO AL SUO POSTO:
+/* let array = ["sedia", "tavolo", "fruttiera", "candelabro", "bicchiere", "forchetta", "tovagliolo"];
+array[3] = "tovaglia";
+console.log(array); */
 
+//ESERCIZI BASATI SU ARRAY, CICLO FOR E IF (TUTTO INSIEME):
+//HAI UN ARRAY DI NUMERI: CREA UN NUOVO ARRAY CHE CONTIENE SOLO GLI ELEMENTI CHE SI TROVANO IN POSIZIONI PARI
+/* let arrayNum = [1,2,3,4,5,6,7,8,9,10];
+let nuovoArray = [];
+for (let i = 0; i < arrayNum.length; i++) {
+    if (i % 2 === 0) {
+        nuovoArray.push(arrayNum[i]);
+    }
+}
+console.log(nuovoArray); */
 
-
-
-
-
-
-
+//HAI UN ARRAY DI NUMERI: CREA UN NUOVO ARRAY CONTENENTE SOLO I NUMERI MAGGIORI DI 5:
+let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let nuovoArray = [];
+for (let i = 0; i < arrayNum.length; i++) {
+    if (i > 5) {
+        nuovoArray.push(arrayNum[i]);
+    }
+}
+console.log(nuovoArray);
 
 
 //Oggetti
