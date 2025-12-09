@@ -1500,7 +1500,10 @@ console.log(array.slice(2, 5)); */
 array[3] = "tovaglia";
 console.log(array); */
 
-//ESERCIZI BASATI SU ARRAY, CICLO FOR E IF (TUTTO INSIEME):
+//
+//ESERCIZI BASATI SU ARRAY, CICLO FOR, IF E .PUSH() (TUTTO INSIEME):
+//
+
 //HAI UN ARRAY DI NUMERI: CREA UN NUOVO ARRAY CHE CONTIENE SOLO GLI ELEMENTI CHE SI TROVANO IN POSIZIONI PARI
 /* let arrayNum = [1,2,3,4,5,6,7,8,9,10];
 let nuovoArray = [];
@@ -1512,17 +1515,105 @@ for (let i = 0; i < arrayNum.length; i++) {
 console.log(nuovoArray); */
 
 //HAI UN ARRAY DI NUMERI: CREA UN NUOVO ARRAY CONTENENTE SOLO I NUMERI MAGGIORI DI 5:
-let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+/* let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let nuovoArray = [];
 for (let i = 0; i < arrayNum.length; i++) {
-    if (i > 5) {
+    if (arrayNum[i] > 5) {
+        nuovoArray.push(arrayNum[i]);
+    }
+}
+console.log(nuovoArray); */
+
+//HAI UN ARRAY DI NUMERI: CREA UN NUOVO ARRAY CON SOLO I NUMERI PARI
+/* let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arrayNuovo = [];
+for (let i = 0; i < arrayNum.length; i++) {
+    if (arrayNum[i] % 2 === 0) {
+        arrayNuovo.push(arrayNum[i]);
+    }
+}
+console.log(arrayNuovo); */
+
+//HAI UN ARRAY DI NUMERI: CREA UN NUOVO ARRAY DOVE OGNI NUMERO è RADDOPPIATO (QUI L IF NON CI VUOLE IN QUANTO LA RICHIESTA NECESSITA DI UNA SOLA RISPOSTA SENZA ALTERNATIVE!)
+/* let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let nuovoArray = [];
+for (let i = 0; i < arrayNum.length; i++) {
+    nuovoArray.push(arrayNum[i]*2);
+}
+console.log(nuovoArray); */
+
+//HAI UN ARRAY DI PAROLE: CREA UN NUOVO ARRAY DI PAROLE CHE HANNO PIU DI 4 LETTERE
+/* let parole = ["pane","gelato","farina","uova","carne","formaggio","olio di oliva"]
+let nuovoArray = [];
+for (let i = 0; i < parole.length; i++) {
+    if (parole[i].length > 4) {
+        nuovoArray.push(parole[i]);
+    }
+}
+console.log(nuovoArray); */
+
+//HAI UN ARRAY MISTO (NUMERI E STRINGHE): CREA DUE ARRAY SEPARATI, UNO CON I NUMERI ED UNO CON LE STRINGHE
+/* let numeriStringhe = [0, 1, 2, 3, "sedia", "tavolo", "poltrona", "divano"];
+let arrayNumeri = [];
+let arrayStringhe = [];
+for (let i = 0; i < numeriStringhe.length; i++) {
+    if (typeof numeriStringhe[i] === "string") {
+        arrayStringhe.push(numeriStringhe[i]);
+    } else if (typeof numeriStringhe[i] === "number") {
+        arrayNumeri.push(numeriStringhe[i])
+    }
+}
+console.log(arrayStringhe);
+console.log(arrayNumeri); */
+
+//HAI UN ARRAY DI NUMERI: CREA UN NUOVO ARRAY CON I NUMERI SUPERIORI ALLA MEDIA DELL'ARRAY ORIGINALE
+let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let somma = 0;
+let nuovoArray = [];
+for(let i = 0; i < arrayNum.length; i++) {
+    somma = somma + arrayNum[i];
+}
+console.log(somma);
+
+let media = somma/arrayNum.length;
+console.log(media);
+
+for (let i = 0; i < arrayNum.length; i++) {
+    if (arrayNum[i] > media) {
         nuovoArray.push(arrayNum[i]);
     }
 }
 console.log(nuovoArray);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Oggetti
 //Funzioni
 //DOM
-//Logica e mini-progetti: calcolatrice, lista della spesa, contatore click, generatore di numeri casuali, gioco (indovina il numero)
