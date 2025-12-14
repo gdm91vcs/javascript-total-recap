@@ -1567,7 +1567,7 @@ console.log(arrayStringhe);
 console.log(arrayNumeri); */
 
 //HAI UN ARRAY DI NUMERI: CREA UN NUOVO ARRAY CON I NUMERI SUPERIORI ALLA MEDIA DELL'ARRAY ORIGINALE
-let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+/* let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let somma = 0;
 let nuovoArray = [];
 for(let i = 0; i < arrayNum.length; i++) {
@@ -1583,7 +1583,83 @@ for (let i = 0; i < arrayNum.length; i++) {
         nuovoArray.push(arrayNum[i]);
     }
 }
+console.log(nuovoArray); */
+
+//HAI UN ARRAY DI PAROLE: CREA UN NUOVO ARRAY CON LE PAROLE CHE INIZIANO CON LA STESSA LETTERA DI UNA PAROLA SCELTA DA ME
+/* let parole = ["sedia", "sedano","banco","tavolo","soggiorno","lampadina"]
+let nuovoArray = []
+for (let i = 0; i < parole.length; i++) {
+    if (parole[i].startsWith("s")) {
+        nuovoArray.push(parole[i]);
+    }
+}
+console.log(nuovoArray); */
+
+//HAI UN ARRAY DI NUMERI: CREA UN NUOVO ARRAY CON SOLO I VALORI UNICI, RIMUOVI I DUPLICATI
+/* let numeri = [1,2,3,3,4,5,6,6,7,7,8,9,10,10]
+let nuovoArray = [];
+for (let i = 0; i < numeri.length; i++) {
+    if (nuovoArray.indexOf(numeri[i])=== -1) {
+        nuovoArray.push(numeri[i]);
+    }
+}
+console.log(nuovoArray); */
+
+//HAI UN ARRAY DI NUMERI: DIVIDI L ARRAY IN MINI ARRAY DI 3 ELEMENTI CIASCUNO. LULTIMO MINI-ARRAY PUò AVRE MENO ELEMENTI
+/* let numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let miniArray = [];
+for (let i = 0; i < numeri.length; i+=3) {
+    let pezzo = numeri.slice(i, i+3);
+    miniArray.push(pezzo);
+}
+console.log(miniArray); */
+
+//HAI UN ARRAY DI NUMERI: MODIFICA DIRETTAMENTE OGNI NUMERO RADDOPPIANDOLO NELL ARRAY ORIGINALE, SENZA CREARNE UNO NUOVO
+/* let numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for(let i = 0; i < numeri.length; i++) {
+    numeri[i] = numeri[i]*2;
+}
+console.log(numeri); */
+
+//HAI UN ARRAY DI NUMERI: CREA UN NUOV0 ARRAY CON I NUMERI CHE VUOI SOMMARE E POI SOMMALI:
+/* let numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let somma = 0;
+let nuovoArray = [];
+for (let i = 0; i < numeri.length; i++) {
+    if (numeri[i] > 5) {
+        somma = somma + numeri[i];
+        nuovoArray.push(numeri[i]);
+    }
+}
 console.log(nuovoArray);
+console.log(somma); */
+
+//HAI UN ARRAY DI PAROLE: CONTA SOLO QUANTE PAROLE HANNO PIù DI 4 LETTERE:
+/* let parole = ["sedia", "sedano", "banco", "tavolo", "soggiorno", "lampadina", "cane", "gatto", "uovo", "arancia"];
+let paroleGrandiQuattro = [];
+for (let i = 0; i < parole.length; i++) {
+    if(parole[i].length > 4) {
+        paroleGrandiQuattro.push(parole[i]);
+    }
+}
+console.log(paroleGrandiQuattro.length); */
+
+//HAI UN ARRAY DI NUMERI: CREA UN NUOVO ARRAY DEL QUADRATO DI TUTTI I NUMERI PRESENTI NELL ARRAY ORIGINALE
+/* let numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let nuovoArray = [];
+for (let i = 0; i < numeri.length; i++) {
+    numeri[i] = numeri[i] ** 2;//in questo esempio però ho modificato l array originale!
+    nuovoArray.push(numeri[i]);
+}
+console.log(nuovoArray); */
+
+
+/* let numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let nuovoArray = [];
+for (let i = 0; i < numeri.length; i++) {
+    nuovoArray.push(numeri[i]);//in questo esempio invece non ho modificato l array originale!
+}
+console.log(nuovoArray); */
 
 
 
@@ -1603,6 +1679,35 @@ console.log(nuovoArray);
 
 
 
+//FUNCTION
+/* function saluta() {
+    console.log("Ciao Gab!");
+}
+
+saluta()
+saluta()
+saluta()
+saluta()
+saluta()
+saluta()
+saluta()
+saluta()
+saluta()
+ */
+
+
+/* function saluta(nome) {
+    console.log("Ciao"+ nome);
+}
+
+saluta(" Marco"); */
+
+
+/* let salutaa = function() {
+    console.log("ciao Gab!");
+};
+
+salutaa(); */
 
 
 
@@ -1614,6 +1719,10 @@ console.log(nuovoArray);
 
 
 
-//Oggetti
-//Funzioni
+
+
+
+
+
+//OGGETTI
 //DOM
