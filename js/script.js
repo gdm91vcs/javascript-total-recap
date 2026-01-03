@@ -1661,23 +1661,89 @@ for (let i = 0; i < numeri.length; i++) {
 }
 console.log(nuovoArray); */
 
+//HAI UN ARRAY DI NUMERI NEGATIVI E POSITIVI: DIVIDI I NUMERI NEGAT DAI POSIT IN DUE ARRAY DIVERSI
+/* let numeri = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5];
+let numPos = [];
+let numNeg = [];
+for (let i = 0; i < numeri.length; i++) {
+    if (numeri[i] >= 0) {
+        numPos.push(numeri[i]);
+    } else {
+        numNeg.push(numeri[i]);
+    }
+}
+console.log(numPos);
+console.log(numNeg); */
 
+//HAI UN ARRAY DI NUMERI MISTI: TROVA IL NUMERO PIù GRANDE 
+/* let numeri = [34, 75, 12, 56, 120, 80, 90, 76]
+let max = [0];
+for (let i = 0; i < numeri.length; i++) {
+    if (numeri[i] > max) {
+        max = numeri[i];
+    }
+}
+console.log(max); */
 
+/* let numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(numeri[numeri.length-1]) */
 
+//HAI UN ARRAY DI NUMERI: CALCOLA LA MEDIA DEI VALORI E CREA UN ARRAY CON SOLO I NUMERI MAGGIORI DELLA MEDIA
+/* let numeri = [10, 20, 30, 40, 50, 60]
+let media = 0;
+let somma = 0;
+let numMax = [] */
+//DEFINISCO LA SOMMA CON UN CICLO FOR PER LA RIPETIZIONE DELLA SOMMATORIA SU OGNI NUMERO DELL ARRAY:
+/* for (let i = 0; i < numeri.length; i++) {
+    somma = somma + numeri[i];
+}
+console.log(somma); */
+//CALCOLO LA MEDIA FUORI DALL ARRAY:
+/* media = somma / numeri.length;
+console.log(media); */
+//DEFINISCO I NUMERI MAGGIORI DELLA MEDIA UTILIZZANDO NUOVAMENTE UN CICLO FOR PER CONTROLLARE TUTTI I NUMERI DELL ARRAY AGGIUNGIO IF PER DARE LA CONDIZIONE GIUSTA PER DEFINIRE QUALI NUMERI DEVONO ESSERE CONSIDERATI NEL NUOVO ARRAY:
+/* for (let i = 0; i < numeri.length; i++) {
+    if(numeri[i] > media) {
+        numMax.push(numeri[i]);
+    }
+}
+console.log(numMax); */
 
+//HAI UN ARRAY DI PAROLE: SCEGLI UNA PAROLA E CREA UN NUOVO ARRAY CON TUTTE LE PAROLE CHE INIZIANO CON LA STESS LETTERA:
+/* let parole = ["sedia", "sedano", "televisione", "computer", "soglia"];
+let wordArray = [];
+for (let i = 0; i < parole.length; i++) {
+    if(parole[i].startsWith("s")) {
+        wordArray.push(parole[i]);
+    } 
+}
+console.log(wordArray); */
 
+//HAI UN ARRAY DI NUMERI: TRASFORMA TUTTI I NUMERI DISPARI IN NEGATIVI NELL ARRAY ORIGINALE
+/* let numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < numeri.length; i++) {
+    if(numeri[i] % 2 !==0) {
+        numeri[i] = -numeri[i];
+    }
+}
+console.log(numeri); */
 
+//HAI UN ARRAY MOLTO LUNGO: DIVIDI L ARRAY IN PIù MINI ARRAY DA 3 ELEMENTI CIASCUNO, SENZA USARE SOLO PUSH MA CREANDO MINI ARRAY SEPARATI AD OGNI GRUPPO DI 3.
+/* let array = [1, 2, "pane", 3, 4, "gatto", 5, 6, 7, "muro", "sedia", 8, 9, "computer"];
+let miniArray = [];
+for (let i = 0; i < array.length; i+=3) {
+    let gruppo = array.slice(i,i+3);
+    miniArray.push(gruppo);
+}
+console.log(miniArray); */
 
-
-
-
-
-
-
-
-
-
-
+/* let array = [1, 2, "pane", 3, 4, "gatto", 5, 6, 7, "muro", "sedia", 8, 9, "computer"];
+let miniArray = [];
+for (let i = 0; i < array.length; i += 3) {
+    let gruppo = array.slice(i,i+3);
+    miniArray[miniArray.length] = gruppo;
+}
+console.log(miniArray); */
 
 //FUNCTION
 /* function saluta() {
@@ -1709,20 +1775,117 @@ saluta(" Marco"); */
 
 salutaa(); */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //OGGETTI
+/* let personaa = {
+    nome: "Gabriele",
+    età: 34,
+    saluta: function () {
+        console.log("Ciao, mi chiamo "+ this.nome,"ed ho "+ this.età, "anni!");
+    }
+}
+ console.log(personaa.nome)//STAMPERà SOLO GABRIELE
+ console.log(personaa.età)//STAMPERà SOLO 34
+ 
+ personaa.saluta();//QUI INVOCHIAMO LA FUNZIONE CREATA DENTRO L OGGETTO E STAMPERà CIAO, MI CHIAMO GABRIELE ED HO 34 ANNI! */
+
+//ESERCIZI FUNCTION + OBJECT:
+/* let personaa = {
+    nome: "Gabriele",
+    età: 34,
+    presentazione: function() {
+        console.log("Ciao, mi chiamo ", this.nome, "e ho", this.età, "anni!");
+    }
+}
+console.log(personaa.nome);
+console.log(personaa.età);
+
+personaa.presentazione(); */
+
+/* let studente = {
+    nome: "Marco",
+    voto: 8,
+    descrizione: function() {
+        console.log(this.nome, "ha preso", this.voto);
+    }
+}
+ studente.descrizione(); */
+
+/* let rettangolo = {
+    base: 10,
+    altezza: 8,
+    calcolaArea: function() {
+        let area = this.base*this.altezza;
+        console.log(area);
+    }
+}
+rettangolo.calcolaArea(); */
+
+/* let contoBancario = {
+    saldo: 0,
+    deposita: function(importo) {
+        this.saldo = this.saldo + importo;
+    },
+    preleva: function(importo) {
+        if(importo > this.saldo) {
+            console.error("SALDO INSUFFICIENTE");
+        } else {
+            this.saldo = this.saldo - importo;
+        }
+    },
+    mostraSaldo: function() {
+        console.log("il saldo è: ", this.saldo.toFixed(2) + " €");
+    }
+}    
+contoBancario.deposita(100);
+contoBancario.preleva(20);
+contoBancario.mostraSaldo(); */
+
+
+
+/* let utente = {
+    nome: "Gabriele",
+    online: false,
+    vaiOnline: function() {
+        if(!this.online) {
+            this.online = true;
+            console.log(this.nome + " è ONLINE!")
+        } else {
+            console.log(this.nome + " è OFFLINE!")
+        }
+    }
+}
+utente.vaiOnline();
+utente.vaiOnline(); */
+
+/* const numeri = [1, 2, 3, 4, 5, 6];
+
+const numeriPari = numeri.filter(n => n % 2 === 0);
+
+console.log(numeriPari); */
+ 
 //DOM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
